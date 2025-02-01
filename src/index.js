@@ -6,9 +6,9 @@ dotenv.config({
 })
 connectdb;
 
-then (()=>{
-    app.listen(process.env.PORT ||  8000 ,()=>{
-        console.log(`server is running in at port ${process.env.PORT}`);
+then (() => {
+    app.listen(process.env.PORT ||  8000 ,() =>{
+        console.log(`server is running in at port: ${process.env.PORT}`);
     });
 })
 .catch((err)=>{
